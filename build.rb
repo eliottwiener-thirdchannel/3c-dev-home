@@ -32,6 +32,11 @@ projects = {
     builds: 'https://jenkins.thirdchannel.com/blue/organizations/jenkins/ThirdChannel%2Fthirdchannel-legacy/branches',
     deploy: 'http://build.thirdchannel.com/jenkins/view/ThirdChannel/job/ThirdChannel-production-deploy/',
   },
+  'jira' => {
+    'program services queue' => 'https://thirdchannel.atlassian.net/issues/?filter=20599',
+    'current sprint' => 'https://thirdchannel.atlassian.net/issues/?filter=14300',
+    'create ticket' => 'https://thirdchannel.atlassian.net/secure/CreateIssue!default.jspa',
+  }
 
 }
 
