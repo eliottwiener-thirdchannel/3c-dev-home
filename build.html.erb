@@ -1,0 +1,27 @@
+<style>
+table {
+	width: 100%;
+}
+td {
+	padding: 1em;
+}
+tr {
+	background-color: LightSkyBlue;
+}
+</style>
+<table>
+<% projects.each do |project_name, project| %>
+	<tr>
+		<td><%= project_name %></td>
+		<% project.each do |k, v| %>
+			<% if v.present? %>
+				<td>
+					<a href="<%=v%>">
+						<%=k%>
+					</a>
+				</td>
+			<% end %>
+		<% end %>
+	</tr>
+<%end%>
+</table>

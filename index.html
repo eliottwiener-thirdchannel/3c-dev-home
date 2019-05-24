@@ -1,57 +1,159 @@
-<title>3C dev home</title>
 <style>
-	a {
-		margin: 0.5em;
-	}
-	section {
-		padding: 0.5em;
-	}
-	#production {
-		background-color: rgba(255, 0, 0, 0.4);
-	}
-	table {
-		border-collapse: collapse;
-	}
-	td {
-		font-size: 1.5em;
-		padding: 2em 0.5em;
-	}
+table {
+	width: 100%;
+}
+td {
+	padding: 1em;
+}
+tr {
+	background-color: LightSkyBlue;
+}
 </style>
-
-<!--
-<form method="post" action="https://duckduckgo.com/lite" target="_blank">
-<input size="80" name="q" autofocus>
-<input type="submit" value="Search">
-</form> 
--->
-
 <table>
-<tr>
-	<td>Organization</td>
-	<td><a href="https://mail.google.com/mail/u/0/h/1thwq0ea1sxsi/?&">Mail</a></td>
-	<td><a href="https://calendar.google.com/">Calendar</a></td>
-	<td><a href="https://thirdchannel.atlassian.net/secure/RapidBoard.jspa?rapidView=3&quickFilter=5">Planning Board</a></td>
-	<td><a href="https://github.com/thirdchannel">GitHub</a></td>
-	<td><a href="https://github.com/pulls?utf8=%E2%9C%93&q=is%3Aopen+is%3Apr+involves%3Aeliottwiener-thirdchannel+">Pull Requests</a></td>
-	<td><a href="https://thirdchannel.atlassian.net/wiki/spaces/DEV/overview">Confluence</a></td>
-</tr>
 
-<tr id="production">
-	<td>Production</td>
-	<td><a href="https://www2.thirdchannel.com/login">ThirdChannel</a></td>
-	<td><a href="http://rabbitmq.thirdchannel.com/#/">RabbitMQ Admin</a></td>
-	<td><a href="http://build.thirdchannel.com/jenkins/">Old Jenkins</a></td>
-	<td><a href="https://jenkins.thirdchannel.com/blue/organizations/jenkins/pipelines">New Jenkins</a></td>
-	<td><a href="https://thirdchannel.loggly.com/">Loggly</a></td>
-	<td></td>
-</tr>
+	<tr>
+		<td>thirdchannel</td>
+		
+			
+				<td>
+					<a href="https://www.staging.thirdchannel-staging.com/">
+						staging
+					</a>
+				</td>
+			
+		
+			
+				<td>
+					<a href="https://www.thirdchannel.com/">
+						prod
+					</a>
+				</td>
+			
+		
+	</tr>
 
-<tr>
-	<td>Development</td>
-	<td><a href="http://www2.thirdchannel.dev:5000/login">ThirdChannel</a></td>
-	<td><a href="http://localhost:15672/#/">RabbitMQ Admin</a></td>
-	<td></td>
-	<td></td>
-	<td></td>
-	<td></td>
-</tr>
+	<tr>
+		<td>rabbitmq</td>
+		
+			
+				<td>
+					<a href="https://rabbitmq.staging.thirdchannel-staging.com/#/">
+						staging
+					</a>
+				</td>
+			
+		
+			
+				<td>
+					<a href="https://strong-emu.rmq.cloudamqp.com/#/">
+						prod
+					</a>
+				</td>
+			
+		
+	</tr>
+
+	<tr>
+		<td>job-scheduling</td>
+		
+			
+				<td>
+					<a href="https://github.com/thirdchannel/job-scheduling">
+						repo
+					</a>
+				</td>
+			
+		
+			
+				<td>
+					<a href="https://us-east-1.console.aws.amazon.com/elasticbeanstalk/home?region=us-east-1#/environment/dashboard?applicationName=Procrastination&environmentId=e-2anm42qmsm">
+						ebs
+					</a>
+				</td>
+			
+		
+			
+				<td>
+					<a href="https://jenkins.thirdchannel.com/blue/organizations/jenkins/ThirdChannel%2Fjob-scheduling/branches">
+						builds
+					</a>
+				</td>
+			
+		
+			
+				<td>
+					<a href="https://jenkins.thirdchannel.com/blue/organizations/jenkins/production%2Fjob-scheduling%2Fdeployment/branches">
+						deploy
+					</a>
+				</td>
+			
+		
+	</tr>
+
+	<tr>
+		<td>ingest-aggregation</td>
+		
+			
+				<td>
+					<a href="https://github.com/thirdchannel/ingest-aggregation">
+						repo
+					</a>
+				</td>
+			
+		
+			
+				<td>
+					<a href="https://console.aws.amazon.com/elasticbeanstalk/home?region=us-east-1#/environment/dashboard?applicationName=ingest-aggregation&environmentId=e-bfim4zkirc">
+						ebs
+					</a>
+				</td>
+			
+		
+			
+				<td>
+					<a href="https://jenkins.thirdchannel.com/blue/organizations/jenkins/ThirdChannel%2Fingest-aggregation/branches">
+						builds
+					</a>
+				</td>
+			
+		
+			
+				<td>
+					<a href="https://jenkins.thirdchannel.com/blue/organizations/jenkins/production%2Fingest-aggregation%2Fdeployment/branches">
+						deploy
+					</a>
+				</td>
+			
+		
+	</tr>
+
+	<tr>
+		<td>thirdchannel-legacy</td>
+		
+			
+				<td>
+					<a href="https://github.com/thirdchannel/thirdchannel-legacy">
+						repo
+					</a>
+				</td>
+			
+		
+			
+				<td>
+					<a href="https://jenkins.thirdchannel.com/blue/organizations/jenkins/ThirdChannel%2Fthirdchannel-legacy/branches">
+						builds
+					</a>
+				</td>
+			
+		
+			
+				<td>
+					<a href="http://build.thirdchannel.com/jenkins/view/ThirdChannel/job/ThirdChannel-production-deploy/">
+						deploy
+					</a>
+				</td>
+			
+		
+	</tr>
+
+</table>
