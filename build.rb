@@ -13,7 +13,10 @@ projects = {
   },
   'rabbitmq' => {
     staging: 'https://rabbitmq.staging.thirdchannel-staging.com/#/',
-    prod: 'https://strong-emu.rmq.cloudamqp.com/#/',
+    prod: 'https://customer.cloudamqp.com/instance/56783/sso?goto=details/mgmt',
+  },
+  'loggly' => {
+    search: 'https://thirdchannel.loggly.com/search',
   },
   'job-scheduling' => {
     repo: 'https://github.com/thirdchannel/job-scheduling',
